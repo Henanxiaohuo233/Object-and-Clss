@@ -283,6 +283,12 @@ public class Link {
                 //指定索引位置删除
                 System.out.println(sbf4);
                 //输出结果：天行健，自强不息
+                
+                StringBuffer sbf = new StringBuffer("故事春晓");//定义字符
+                sbf = sbf.delete(0,2);                         //删除索引位置:故事
+                sbf = sbf.insert(1,"眠不觉");          //在索引1的位置插入:眠不觉
+                sbf.append(",处处闻啼鸟");                       //追加字符
+                System.out.println(sbf);                 //输出结果:春眠不觉晓,处处闻啼鸟
         }
 }
 
