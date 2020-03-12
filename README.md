@@ -289,6 +289,44 @@ public class Link {
                 sbf = sbf.insert(1,"眠不觉");          //在索引1的位置插入:眠不觉
                 sbf.append(",处处闻啼鸟");                       //追加字符
                 System.out.println(sbf);                 //输出结果:春眠不觉晓,处处闻啼鸟
+                //--------------------------------------------------------------
+                章后小结
+                //大小写转换
+                String str = new String("ABCdef");
+                String str2 = str.toUpperCase();
+                String str3 = str.toLowerCase();
+                System.out.println(str2);
+                System.out.println(str3);
+                
+                //str追加0-10
+                StringBuffer ste = new StringBuffer("str"); //实例化StringBuffer对象
+                for(int i=0;i<=10,i++){
+                        str.append(i);                      //通过for循环向Str追加1~10
+                }
+                System.out.println(str);                    //输出结果为str012345678910
+                
+                //大陆手机号判断
+                Scanner sc =new Scanner(System.in);
+                String regx = "(13[0-9]|15[012356789]|18[056789])\\d{8}";
+                while (true){
+                        String phone= sc.nextLine();
+                        if (phone.matches(regx)){
+                                System.out.println("是手机号");
+                        }else{
+                                System.out.println("不是手机号");
+                        }
+                }
+                //截取字符串后比较 比较字符串的时候不能使用== = 要使用equal或                                                                           equalsIgnoreCase
+                String str="Hello,java";
+                String str1="1Hello,java";
+                String substr = str.substring(0,4);
+                String substr1= str1.substring(0,4);
+                if (substr.equalsIgnoreCase(substr1)){
+                        System.out.println("两个字符串相等");
+                }else{
+                        System.out.println("两个字符串不相等");
+                }
+                
         }
 }
 
