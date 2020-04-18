@@ -46,3 +46,26 @@ public class Book {
 }
 */
 
+/*
+局部变量 和 局部变量的有效范围
+* */
+public class Mytest {
+    String name;           //成员变量
+
+    public void getName() {
+        int id=0;          //局部变量
+        System.out.println(id+name);
+    }
+
+    public static void main(String[] args) {
+        for (int i=0;i<=10;i++){
+            System.out.print("i = "+i);
+        }
+        System.out.println();
+        for (int i=1;i<=10;i++){
+            System.out.print("i = "+i);
+        }
+    }
+}
+
+
