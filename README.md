@@ -68,4 +68,28 @@ public class Mytest {
     }
 }
 
+/*
+*类的构造方法
+*/
+public class ClassTest {
+    public  ClassTest(){    //一个空参数的构造方法
+        // 这个方法也可以不存在，编译器会生成无参数的构造方法
+    }
+
+    public static void main(String[] args) {
+        ClassTest test=new ClassTest(); //类的对象
+    }
+}
+
+//分界线 下面是无参数构造方法和有参数构造方法
+
+public class ClassTest {
+    public  ClassTest(int a){}  //有参数的构造方法
+    public  ClassTest(){};      //无参数的构造方法
+
+    public static void main(String[] args) {
+        ClassTest test=new ClassTest(1); //定义参数
+        //参数也可以删掉但是要有一个无参数的构造方法
+    }
+}
 
