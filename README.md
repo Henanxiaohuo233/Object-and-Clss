@@ -68,6 +68,7 @@ public class Mytest {
     }
 }
 
+
 /*
 *类的构造方法
 */
@@ -93,3 +94,14 @@ public class ClassTest {
     }
 }
 
+//定义无参和有参的构造方法
+public class AnyThting {
+    public AnyThting(){                     //定义无参构造方法
+        this("this 调用有参构造方法");  //使用this调用有参构造方法
+    }
+
+    public AnyThting(String name){          //定义有参构造方法
+        System.out.println("有参构造方法");
+    }
+
+}
