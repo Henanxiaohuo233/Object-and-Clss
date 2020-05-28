@@ -105,3 +105,12 @@ public class AnyThting {
     }
 
 }
+
+//测试
+    public class BlackXiao{
+        public BlackXiao{}
+        Public sest void main(Sting[] args){
+            BlackXiao xiao=new BlackXiao(1);
+            System.out.println("无参");
+        }
+    }
