@@ -114,3 +114,21 @@ public class AnyThting {
             System.out.println("无参");
         }
     }
+    //鸡蛋灌饼
+    public class EggCake {
+    int eggCount;       //定义对象 初值放在构造方法里面定义
+    public EggCake(int eggCount){   //定义有参构造方法
+        this.eggCount=eggCount;     //给成员变量赋值
+        System.out.println("这个饼里有"+eggCount+"个鸡蛋");
+    }
+
+    public EggCake(){               //定义有参
+        this(1);           //调用构造方法
+    }
+
+    public static void main(String[] args) {
+        EggCake e=new EggCake();
+        EggCake e2=new EggCake(5);
+    }
+}
+
